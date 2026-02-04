@@ -34,6 +34,5 @@ This approach reduces hallucinations and ensures answers are grounded in source 
 
 ---
 
-## 📂 Project Structure
 
 
