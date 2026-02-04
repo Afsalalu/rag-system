@@ -81,8 +81,24 @@ Question:
 
     return response.choices[0].message.content
 
-#getting user input question
-q = input("Enter the Question:\t")
+"""getting user input question
+q = input("Enter the Question:\t")"""
+
+if __name__ == "__main__":
+    questions = [
+        "What is Machine Learning?",
+        "Explain Retrieval-Augmented Generation"
+    ]
+
+    for q in questions:
+        print("\n" + "=" * 50)
+        print("Question:", q)
+
+        print("\n🔹 Transformer-based Answer:")
+        print(transformer_answer(q))
+
+        print("\n🔹 LLM-based Answer:")
+        print(llm_answer(q))
 
 #printing Transformer Output
 print("\nTransformer-based Answer:")
